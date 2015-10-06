@@ -1,0 +1,57 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.040 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\HeartCore\HeartCore\Builds\Testbuild_Data\Managed\System.dll (this message is harmless)
+10/06/15 18:33:39: [CAPI] LibOVR module is located at C:\Windows\SYSTEM32\LibOVRRT32_0_7.dll
+
+ 
+(Filename:  Line: 46)
+
+Unity v5.2.1f1, Oculus Utilities v0.1.0, OVRPlugin v0.1.2.0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Creating volume controller...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2034 -> priority: 1 
+UnityEngine.RaycastHit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+UnityEngine.RaycastHit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+UnityEngine.RaycastHit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+UnityEngine.RaycastHit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
