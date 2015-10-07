@@ -6,10 +6,19 @@ ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Inside Windows
+    100004: Plane006
     400000: //RootNode
+    400002: Inside Windows
+    400004: Plane006
     2300000: //RootNode
+    2300002: Inside Windows
+    2300004: Plane006
     3300000: //RootNode
+    3300002: Inside Windows
+    3300004: Plane006
     4300000: Plane006
+    4300002: Inside Windows
   materials:
     importMaterials: 1
     materialName: 0
