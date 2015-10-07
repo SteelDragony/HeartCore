@@ -24,7 +24,7 @@ public class FrequencyMeasure : MonoBehaviour {
 			lastTimePressed = now;
 			intervals.Add (delta);
 
-			if(intervals.Count > 10)
+			if(intervals.Count > 2)
 				intervals.RemoveAt(0);
 			CalculateAvarage();
 		}
