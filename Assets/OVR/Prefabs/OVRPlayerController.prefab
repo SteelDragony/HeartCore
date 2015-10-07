@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11462408}
+  - 114: {fileID: 11484734}
   m_Layer: 0
   m_Name: OVRPlayerController
   m_TagString: Untagged
@@ -195,6 +196,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &187066
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487636}
+  - 119: {fileID: 11980518}
+  m_Layer: 0
+  m_Name: LookTargetProjector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &188612
 GameObject:
   m_ObjectHideFlags: 1
@@ -264,8 +281,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: .153999999, y: -.675999999, z: .986000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -308,6 +325,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 424404}
+  - {fileID: 487636}
   m_Father: {fileID: 462066}
   m_RootOrder: 1
 --- !u!4 &400014
@@ -415,6 +433,18 @@ Transform:
   - {fileID: 417410}
   m_Father: {fileID: 424404}
   m_RootOrder: 1
+--- !u!4 &487636
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400012}
+  m_RootOrder: 1
 --- !u!20 &2015248
 Camera:
   m_ObjectHideFlags: 1
@@ -423,7 +453,7 @@ Camera:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -432,7 +462,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .100000001
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 90
   orthographic: 0
   orthographic size: 5
@@ -443,6 +473,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -553,7 +584,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bf170db1c6a44a44941f0cfb6048fd4, type: 3}
   m_Name: 
@@ -574,10 +605,10 @@ MonoBehaviour:
   BackAndSideDampen: .5
   JumpForce: .300000012
   RotationAmount: 1.5
-  RotationRatchet: 45
+  RotationRatchet: 0
   HmdResetsY: 1
   HmdRotatesY: 1
-  GravityModifier: 1
+  GravityModifier: 0
   useProfileData: 1
 --- !u!114 &11400020
 MonoBehaviour:
@@ -605,7 +636,7 @@ MonoBehaviour:
   fadeDistance: .0500000007
   fadeMaximum: .25
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  enableIcons: 1
+  enableIcons: 0
   iconTextures:
   - {fileID: 2800000, guid: 4703be3cbf423a942bc24464dc2947dd, type: 3}
   - {fileID: 2800000, guid: 75cc038e306c87f4cb05fcef46eacb4e, type: 3}
@@ -695,6 +726,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Texture: {fileID: 2800000, guid: 75cc038e306c87f4cb05fcef46eacb4e, type: 3}
   m_UVRect:
     serializedVersion: 2
@@ -702,6 +739,35 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &11484734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c0324073594214e9faaf72ba974186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!119 &11980518
+Projector:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187066}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_NearClipPlane: .100000001
+  m_FarClipPlane: 20
+  m_FieldOfView: 60
+  m_AspectRatio: 1
+  m_Orthographic: 1
+  m_OrthographicSize: .100000001
+  m_Material: {fileID: 2100000, guid: 7ffbac26a296fb3498294c47c8fc4203, type: 2}
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!136 &13651854
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -725,7 +791,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1
   m_Radius: .5
   m_SlopeLimit: 45
   m_StepOffset: .300000012
