@@ -31,7 +31,7 @@ public class VRMenu : MonoBehaviour {
                     }
 
                 }
-                Debug.Log(hit);
+                Debug.Log(hit.collider.gameObject.name);
             }
         }
 	}
