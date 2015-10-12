@@ -26,7 +26,9 @@ public class VRMenu : MonoBehaviour {
                     Rigidbody rb = hitObject.GetComponent<Rigidbody>();
                     if (rb != null)
                     {
+                        Debug.Log(rb.useGravity);
                         rb.useGravity = !rb.useGravity;
+                        Debug.Log(rb.useGravity);
                         rb.AddForce(Vector3.up * 5);
                     }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class FrequencyMeasure : MonoBehaviour
 {
@@ -13,12 +14,13 @@ public class FrequencyMeasure : MonoBehaviour
     public float accumulatedError = 0f;
     public float errorDecayRate = 0.1f;
 
-    public AlarmLight alarmLight;
+    public List<AlarmLight> alarmLights;
 
     // Use this for initialization
     void Start()
     {
         intervals = new ArrayList();
+        //alarmLights = new ArrayList();
     }
 
     // Update is called once per frame
@@ -62,7 +64,13 @@ public class FrequencyMeasure : MonoBehaviour
 
         float avg = total / (intervals.Count - 1);
         float frequency = 1 / avg * 60;
-        alarmLight.amlitude = Mathf.Abs(frequency - 104f)/10;
+
+        foreach (AlarmLight L in alarmLights)
+        {
+            L.amlitude = Mathf.Abs(frequency - 104f) / 10;
+        }
+
+        //alarmLight.amlitude = Mathf.Abs(frequency - 104f)/10;
 
         Debug.Log(frequency);
         Debug.Log(avg);
