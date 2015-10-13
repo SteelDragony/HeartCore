@@ -2,12 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class FrequencyMeasure : MonoBehaviour
 {
-
     ArrayList intervals;
 
-    bool pressed = false;
     float lastTimePressed = 0f;
 
     public float targetDifference = 0.6f;
@@ -15,21 +14,20 @@ public class FrequencyMeasure : MonoBehaviour
     public float errorDecayRate = 0.1f;
 
     public List<AlarmLight> alarmLights;
-
+    public FrequencyFeedback feedback;
     // Use this for initialization
     void Start()
     {
         intervals = new ArrayList();
         //alarmLights = new ArrayList();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        pressed = false;
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            pressed = true;
             float now = Time.time;
             float delta = now - lastTimePressed;
             lastTimePressed = now;
@@ -37,7 +35,7 @@ public class FrequencyMeasure : MonoBehaviour
 
             accumulatedError += Mathf.Abs(delta - targetDifference);
 
-            if (intervals.Count > 3)
+            if (intervals.Count > 2)
                 intervals.RemoveAt(0);
             CalculateAvarage();
         }
@@ -67,11 +65,11 @@ public class FrequencyMeasure : MonoBehaviour
 
         foreach (AlarmLight L in alarmLights)
         {
-            L.amlitude = Mathf.Abs(frequency - 104f) / 10;
+            L.amlitude = Mathf.Abs(frequency - 104f) / 20;
         }
 
         //alarmLight.amlitude = Mathf.Abs(frequency - 104f)/10;
-
+        feedback.frequency = frequency;
         Debug.Log(frequency);
         Debug.Log(avg);
     }
