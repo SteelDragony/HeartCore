@@ -11,7 +11,8 @@ public class VRMenu : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (Input.GetButtonDown("Fire1"))
         {
 
@@ -22,18 +23,13 @@ public class VRMenu : MonoBehaviour {
                 GameObject hitObject = hit.transform.gameObject;
                 if (hitObject.tag == "MenuButton")
                 {
-                    Debug.Log("Hit A Button");
                     Rigidbody rb = hitObject.GetComponent<Rigidbody>();
                     if (rb != null)
                     {
-                        Debug.Log(rb.useGravity);
                         rb.useGravity = !rb.useGravity;
-                        Debug.Log(rb.useGravity);
                         rb.AddForce(Vector3.up * 5);
                     }
-
                 }
-                Debug.Log(hit.collider.gameObject.name);
             }
         }
 	}
