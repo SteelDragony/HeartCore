@@ -9,19 +9,24 @@ ModelImporter:
     100002: Object002
     100004: Room
     100006: //RootNode
+    100008: Outside Windows
     400000: Inside Windows
     400002: Object002
     400004: Room
     400006: //RootNode
+    400008: Outside Windows
     2300000: Inside Windows
     2300002: Object002
     2300004: Room
+    2300006: Outside Windows
     3300000: Inside Windows
     3300002: Object002
     3300004: Room
+    3300006: Outside Windows
     4300000: Room
     4300002: Inside Windows
     4300004: Object002
+    4300006: Outside Windows
   materials:
     importMaterials: 1
     materialName: 0
