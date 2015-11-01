@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 651d66c58efb1f94c87020ca6af1b72e
+timeCreated: 1446311071
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DeskScreen
+    100004: Fan
+    100006: Fan Case
+    100008: Fan casing
+    100010: Gauge
+    100012: Gauge Arrow
+    100014: Keyboard
+    100016: Light002
+    100018: Light003
+    100020: Light1
+    100022: Push pad
+    400000: //RootNode
+    400002: DeskScreen
+    400004: Fan
+    400006: Fan Case
+    400008: Fan casing
+    400010: Gauge
+    400012: Gauge Arrow
+    400014: Keyboard
+    400016: Light002
+    400018: Light003
+    400020: Light1
+    400022: Push pad
+    2300000: DeskScreen
+    2300002: Fan
+    2300004: Fan Case
+    2300006: Fan casing
+    2300008: Gauge
+    2300010: Gauge Arrow
+    2300012: Keyboard
+    2300014: Light002
+    2300016: Light003
+    2300018: Light1
+    2300020: Push pad
+    3300000: DeskScreen
+    3300002: Fan
+    3300004: Fan Case
+    3300006: Fan casing
+    3300008: Gauge
+    3300010: Gauge Arrow
+    3300012: Keyboard
+    3300014: Light002
+    3300016: Light003
+    3300018: Light1
+    3300020: Push pad
+    4300000: Push pad
+    4300002: Fan casing
+    4300004: Light1
+    4300006: Light002
+    4300008: Light003
+    4300010: Gauge
+    4300012: Gauge Arrow
+    4300014: DeskScreen
+    4300016: Keyboard
+    4300018: Fan Case
+    4300020: Fan
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
