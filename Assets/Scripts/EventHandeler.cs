@@ -4,6 +4,7 @@ using System.Collections;
 public class EventHandeler : MonoBehaviour {
 
     public AGravityMalfunction gravMalf;
+    public LightFlickering lightsFlick;
     public float maxTimeBetweenEvents = 20f;
     public float minTimeBetweenEvents = 10f;
 
@@ -28,6 +29,15 @@ public class EventHandeler : MonoBehaviour {
             prevEventTime = Time.time;
             gravMalf.activateEvent(4f);
             timeTillEvent = Random.Range(minTimeBetweenEvents, maxTimeBetweenEvents);
+            lightsFlick.flickeringActive = true;
+            StartCoroutine(stopFlicker(3));
         }
 	}
+
+    IEnumerator stopFlicker(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        lightsFlick.flickeringActive = false;
+        yield return null;
+    }
 }

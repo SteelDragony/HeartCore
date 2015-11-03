@@ -32,5 +32,12 @@ public class LightFlickering : MonoBehaviour
                 l.intensity = Mathf.Lerp(l.intensity, lightIntensity, smoothAmount);
             }
         }
+        else
+        {
+            foreach (Light l in flickerLights)
+            {
+                l.intensity = maxIntensity;
+            }
+        }
     }
 }
