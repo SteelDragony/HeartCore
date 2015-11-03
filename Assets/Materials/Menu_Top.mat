@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: HoloGram
+  m_Name: Menu_Top
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _DETAIL_MULX2 _NORMALMAP
-  m_LightmapFlags: 5
+  m_ShaderKeywords: _ALPHABLEND_ON _DETAIL_MULX2 _EMISSION
+  m_LightmapFlags: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
@@ -20,14 +20,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 4541b9119927f2f449b25206d3dcde28, type: 3}
+          m_Texture: {fileID: 2800000, guid: 5bd6835c8dbd9824997f8b443f6df04f, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: ad180b49b05bfc249b58286cf5dcae6e, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -79,18 +79,11 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ColorRamp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _SrcBlend
-        second: 1
+        second: 5
       data:
         first:
           name: _DstBlend
@@ -130,21 +123,17 @@ Material:
       data:
         first:
           name: _Mode
-        second: 3
+        second: 2
       data:
         first:
           name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _ColorRampOffset
         second: 0
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: .0041250037, g: .33056885, b: .56099999, a: 1}
       data:
         first:
           name: _Color
-        second: {r: .485294104, g: 1, b: .82961452, a: .291000009}
+        second: {r: .147058845, g: .894117713, b: 1, a: .465999991}
