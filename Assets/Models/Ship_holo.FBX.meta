@@ -1,62 +1,15 @@
 fileFormatVersion: 2
-guid: 7ac46935dd70b6045bfa8efcb879e5ac
-timeCreated: 1446496160
+guid: ac055b89ae417e045897225c16779a34
+timeCreated: 1446554557
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: DeskFan
-    100004: DeskScreen
-    100006: FanHolder
-    100008: Gauge
-    100010: Gauge_arrow
-    100012: Keyboard
-    100014: Lights
-    100016: Pushpad
-    100018: PushpadOuter
-    100020: Gauge glass
     400000: //RootNode
-    400002: DeskFan
-    400004: DeskScreen
-    400006: FanHolder
-    400008: Gauge
-    400010: Gauge_arrow
-    400012: Keyboard
-    400014: Lights
-    400016: Pushpad
-    400018: PushpadOuter
-    400020: Gauge glass
-    2300000: DeskFan
-    2300002: DeskScreen
-    2300004: FanHolder
-    2300006: Gauge
-    2300008: Gauge_arrow
-    2300010: Keyboard
-    2300012: Lights
-    2300014: Pushpad
-    2300016: PushpadOuter
-    2300018: Gauge glass
-    3300000: DeskFan
-    3300002: DeskScreen
-    3300004: FanHolder
-    3300006: Gauge
-    3300008: Gauge_arrow
-    3300010: Keyboard
-    3300012: Lights
-    3300014: Pushpad
-    3300016: PushpadOuter
-    3300018: Gauge glass
-    4300000: DeskScreen
-    4300002: Gauge
-    4300004: Gauge_arrow
-    4300006: Keyboard
-    4300008: PushpadOuter
-    4300010: Pushpad
-    4300012: FanHolder
-    4300014: DeskFan
-    4300016: Lights
-    4300018: Gauge glass
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Ship_holo_test
   materials:
     importMaterials: 1
     materialName: 0
