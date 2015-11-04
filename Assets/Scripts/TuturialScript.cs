@@ -7,11 +7,14 @@ public class TuturialScript : MonoBehaviour {
 
     public AudioClip[] tuturialDialogue;
 
+    public FrequencyMeasure MainGameFrequency;
+
     AudioSource activeDialogue;
 
 	// Use this for initialization
 	void Start () {
         activeDialogue = GetComponent<AudioSource>();
+        //MainGameFrequency.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -31,6 +34,10 @@ public class TuturialScript : MonoBehaviour {
                 }
                 break;
             case 1:
+                if(Input.GetButtonDown("Button"))
+                {
+                    tuturialStage++;
+                }
                 break;
             default:
                 break;

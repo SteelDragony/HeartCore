@@ -26,7 +26,7 @@ public class FrequencyMeasure : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetButtonDown("Button"))
         {
             float now = Time.time;
             float delta = now - lastTimePressed;
