@@ -15,6 +15,7 @@ public class FrequencyMeasure : MonoBehaviour
 
     public List<AlarmLight> alarmLights;
     public FrequencyFeedback feedback;
+    public TuturialScript tuturial;
     // Use this for initialization
     void Start()
     {
@@ -70,6 +71,7 @@ public class FrequencyMeasure : MonoBehaviour
 
         //alarmLight.amlitude = Mathf.Abs(frequency - 104f)/10;
         feedback.frequency = frequency;
+        tuturial.frequency = frequency;
         Debug.Log(frequency);
         Debug.Log(avg);
     }

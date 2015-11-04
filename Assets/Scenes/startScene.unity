@@ -5380,6 +5380,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eff6742ce369c904fa96b139374d2d69, type: 3}
   - {fileID: 8300000, guid: 3536f8dc583f9b44d9c6721d8c9213be, type: 3}
   MainGameFrequency: {fileID: 1709410719}
+  eventHandeler: {fileID: 722283641}
+  frequency: 0
+  alarms: {fileID: 1955432001}
+  music: {fileID: 2048105934}
 --- !u!4 &1486722751
 Transform:
   m_ObjectHideFlags: 0
@@ -5392,6 +5396,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
+--- !u!1 &1544332906 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100008, guid: b6dd8f5666885c842b521f958c43e915, type: 3}
+  m_PrefabInternal: {fileID: 64685474}
+--- !u!64 &1544332910
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544332906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300006, guid: b6dd8f5666885c842b521f958c43e915, type: 3}
 --- !u!1 &1574170180
 GameObject:
   m_ObjectHideFlags: 0
@@ -7937,6 +7957,7 @@ MonoBehaviour:
   - {fileID: 1130259269}
   - {fileID: 1380803585}
   feedback: {fileID: 402608503}
+  tuturial: {fileID: 1486722750}
 --- !u!4 &1709410720
 Transform:
   m_ObjectHideFlags: 0
@@ -8321,6 +8342,11 @@ AudioSource:
 GameObject:
   m_PrefabParentObject: {fileID: 116832, guid: 5b2d417458403074e9a0fdb81b5df45d, type: 2}
   m_PrefabInternal: {fileID: 875459924}
+--- !u!82 &1955432001 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8294024, guid: cc301f5bfea85544b8cc694c4e330067,
+    type: 2}
+  m_PrefabInternal: {fileID: 1178523454}
 --- !u!1001 &1957596425
 Prefab:
   m_ObjectHideFlags: 0
@@ -8401,12 +8427,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048105933}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 531d786adac26534e9109691a962429a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 73939a0990616b2449362cfa568e04d9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
