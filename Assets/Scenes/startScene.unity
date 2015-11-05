@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d65f0a437bfc745b0f59dc227da45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeMat: {fileID: 2100000, guid: 0e80419bf2695cc4f868669ec214d2d8, type: 2}
+  holeMat: {fileID: 0}
   lookTarget: 0
 --- !u!23 &212110340
 MeshRenderer:
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d65f0a437bfc745b0f59dc227da45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeMat: {fileID: 2100000, guid: 791a7bdb4a42ead4fa021b3f1e5eeeb9, type: 2}
+  holeMat: {fileID: 0}
   lookTarget: 0
 --- !u!23 &788184254
 MeshRenderer:
@@ -4771,7 +4771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d65f0a437bfc745b0f59dc227da45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeMat: {fileID: 2100000, guid: ba89ac62fbebdbb4db1813a320b11f73, type: 2}
+  holeMat: {fileID: 0}
   lookTarget: 0
 --- !u!23 &1297547562
 MeshRenderer:
@@ -6876,7 +6876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d65f0a437bfc745b0f59dc227da45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeMat: {fileID: 2100000, guid: 792a5862288c05f4daf2254fa574c201, type: 2}
+  holeMat: {fileID: 0}
   lookTarget: 0
 --- !u!23 &1664833496
 MeshRenderer:
@@ -8802,7 +8802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d65f0a437bfc745b0f59dc227da45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeMat: {fileID: 2100000, guid: 0180b1dbe352b7c4d8a8165d7527194e, type: 2}
+  holeMat: {fileID: 0}
   lookTarget: 0
 --- !u!23 &2095218943
 MeshRenderer:
