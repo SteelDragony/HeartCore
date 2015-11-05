@@ -12,6 +12,6 @@ public class FanScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(new Vector3(speed, 0f, 0f));
+        transform.Rotate(new Vector3(speed * Time.deltaTime, 0f, 0f));
 	}
 }

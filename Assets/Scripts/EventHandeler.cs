@@ -13,6 +13,9 @@ public class EventHandeler : MonoBehaviour {
     float prevEventTime = 0f;
 
 
+    public AudioClip[] screams;
+    public AudioSource screamPlayer;
+
 	// Use this for initialization
 	void Start () {
         timeTillEvent = Random.Range(minTimeBetweenEvents, maxTimeBetweenEvents);
@@ -30,6 +33,7 @@ public class EventHandeler : MonoBehaviour {
             gravMalf.activateEvent(4f);
             timeTillEvent = Random.Range(minTimeBetweenEvents, maxTimeBetweenEvents);
             lightsFlick.flickeringActive = true;
+            playRandomScream();
             StartCoroutine(stopFlicker(3));
         }
 	}
@@ -39,5 +43,12 @@ public class EventHandeler : MonoBehaviour {
         yield return new WaitForSeconds(delay);
         lightsFlick.flickeringActive = false;
         yield return null;
+    }
+
+    void playRandomScream()
+    {
+        screamPlayer.Stop();
+        screamPlayer.clip = screams[Random.Range(0, screams.Length)];
+        screamPlayer.Play();
     }
 }
